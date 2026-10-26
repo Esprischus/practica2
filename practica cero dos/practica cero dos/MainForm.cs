@@ -32,11 +32,13 @@ namespace practica_cero_dos
 		
 		void BtnEntreClick(object sender, EventArgs e)
 		{
-			double x,c,d;
+			double x,c,d,f;
 			x=Convert.ToDouble(txtNum1.Text);
 			c=Convert.ToDouble(txtNum2.Text);
 			d=x/c;
+			f=x%c;
 			lblR.Text=Convert.ToString(d);
+			lblresiduo.Text=Convert.ToString(f);
 		}
 		
 		void BtnPorClick(object sender, EventArgs e)
@@ -64,6 +66,25 @@ namespace practica_cero_dos
 			c=Convert.ToDouble(txtNum2.Text);
 			d=x+c;
 			lblR.Text=Convert.ToString(d);
+		}
+		
+		void CerrarToolStripMenuItemClick(object sender, EventArgs e)
+		{
+			Application.Exit();
+		}
+		
+		void FormulaGeneralToolStripMenuItemClick(object sender, EventArgs e)
+		{
+			Form1 hola = new Form1();
+			this.Hide();
+			hola.Show();
+		}
+		
+		void BtnClearClick(object sender, EventArgs e)
+		{
+			txtNum2.Text="";
+			txtNum1.Text="";
+			lblR.Text="";
 		}
 	}
 }
