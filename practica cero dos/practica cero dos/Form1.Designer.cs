@@ -118,6 +118,7 @@ namespace practica_cero_dos
 			this.btnborrar.TabIndex = 9;
 			this.btnborrar.Text = "X";
 			this.btnborrar.UseVisualStyleBackColor = true;
+			this.btnborrar.Click += new System.EventHandler(this.BtnborrarClick);
 			// 
 			// btncalcular
 			// 

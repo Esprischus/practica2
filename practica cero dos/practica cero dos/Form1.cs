@@ -43,15 +43,24 @@ namespace practica_cero_dos
 		
 		void BtncalcularClick(object sender, EventArgs e)
 		{
-			double x, d, c, f, z;
-			x=Convert.ToDouble(txtNum1.Text);
-			d=Convert.ToDouble(txtNum2.Text);
+			double a, b, c, f, z;
+			a=Convert.ToDouble(txtNum1.Text);
+			b=Convert.ToDouble(txtNum2.Text);
 			c=Convert.ToDouble(txtNum3.Text);
-			f= (d*d)- (4*x*c);
-			z=Math.Sqrt(f);
-			f=-d-z;
-			f=f/(2*x);
-			lblX1.Text="X1: " + Convert.ToString(f);
+			z = Math.Pow(b, 2) - (4 * a * c);
+			double x1 = (-b + Math.Sqrt(z)) / (2 * a);
+            double x2 = (-b - Math.Sqrt(z)) / (2 * a);
+            lblX2.Text="X1= : "+ Convert.ToString(x1);
+            lblX1.Text="X2= : "+ Convert.ToString(x2);
+		}
+		
+		void BtnborrarClick(object sender, EventArgs e)
+		{
+			txtNum1.Text="";
+			txtNum2.Text="";
+			txtNum3.Text="";
+			lblX2.Text="";
+			lblX1.Text="";
 		}
 	}
 }
