@@ -37,8 +37,8 @@ namespace practica_cero_dos
 			c=Convert.ToDouble(txtNum2.Text);
 			d=x/c;
 			f=x%c;
-			lblR.Text=Convert.ToString(d);
-			lblresiduo.Text=Convert.ToString(f);
+			lblR.Text="Resultado: "+Convert.ToString(d);
+			lblresiduo.Text="Residuo: "+Convert.ToString(f);
 		}
 		
 		void BtnPorClick(object sender, EventArgs e)
@@ -47,7 +47,7 @@ namespace practica_cero_dos
 			x=Convert.ToDouble(txtNum1.Text);
 			c=Convert.ToDouble(txtNum2.Text);
 			d=x*c;
-			lblR.Text=Convert.ToString(d);
+			lblR.Text="Resultado: "+Convert.ToString(d);
 		}
 		
 		void BtnMenosClick(object sender, EventArgs e)
@@ -56,7 +56,7 @@ namespace practica_cero_dos
 			x=Convert.ToDouble(txtNum1.Text);
 			c=Convert.ToDouble(txtNum2.Text);
 			d=x-c;
-			lblR.Text=Convert.ToString(d);
+			lblR.Text="Resultado: "+Convert.ToString(d);
 		}
 		
 		void BtnMasClick(object sender, EventArgs e)
@@ -65,7 +65,7 @@ namespace practica_cero_dos
 			x=Convert.ToDouble(txtNum1.Text);
 			c=Convert.ToDouble(txtNum2.Text);
 			d=x+c;
-			lblR.Text=Convert.ToString(d);
+			lblR.Text="Resultado: "+Convert.ToString(d);
 		}
 		
 		void CerrarToolStripMenuItemClick(object sender, EventArgs e)
@@ -85,6 +85,12 @@ namespace practica_cero_dos
 			txtNum2.Text="";
 			txtNum1.Text="";
 			lblR.Text="";
+			lblresiduo.Text="";
+		}
+		
+		void LblRClick(object sender, EventArgs e)
+		{
+			
 		}
 	}
 }

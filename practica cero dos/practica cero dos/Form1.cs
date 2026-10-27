@@ -62,5 +62,11 @@ namespace practica_cero_dos
 			lblX2.Text="";
 			lblX1.Text="";
 		}
+		
+		void IzunaToolStripMenuItemClick(object sender, EventArgs e)
+		{
+			Form2 nin = new Form2();
+			nin.Show();
+		}
 	}
 }

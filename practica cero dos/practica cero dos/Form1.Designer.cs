@@ -36,6 +36,7 @@ namespace practica_cero_dos
 		/// </summary>
 		private void InitializeComponent()
 		{
+			System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
 			this.menuStrip1 = new System.Windows.Forms.MenuStrip();
 			this.regresarToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
 			this.cerrarToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -49,6 +50,7 @@ namespace practica_cero_dos
 			this.lblX2 = new System.Windows.Forms.Label();
 			this.txtNum3 = new System.Windows.Forms.TextBox();
 			this.label3 = new System.Windows.Forms.Label();
+			this.izunaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
 			this.menuStrip1.SuspendLayout();
 			this.SuspendLayout();
 			// 
@@ -56,10 +58,11 @@ namespace practica_cero_dos
 			// 
 			this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
 									this.regresarToolStripMenuItem,
-									this.cerrarToolStripMenuItem});
+									this.cerrarToolStripMenuItem,
+									this.izunaToolStripMenuItem});
 			this.menuStrip1.Location = new System.Drawing.Point(0, 0);
 			this.menuStrip1.Name = "menuStrip1";
-			this.menuStrip1.Size = new System.Drawing.Size(231, 24);
+			this.menuStrip1.Size = new System.Drawing.Size(301, 24);
 			this.menuStrip1.TabIndex = 0;
 			this.menuStrip1.Text = "menuStrip1";
 			// 
@@ -79,15 +82,17 @@ namespace practica_cero_dos
 			// 
 			// txtNum2
 			// 
-			this.txtNum2.Location = new System.Drawing.Point(118, 46);
+			this.txtNum2.Location = new System.Drawing.Point(150, 59);
 			this.txtNum2.Name = "txtNum2";
 			this.txtNum2.Size = new System.Drawing.Size(100, 20);
 			this.txtNum2.TabIndex = 7;
 			// 
 			// label2
 			// 
+			this.label2.BackColor = System.Drawing.Color.Transparent;
 			this.label2.Font = new System.Drawing.Font("Perpetua Titling MT", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.label2.Location = new System.Drawing.Point(12, 47);
+			this.label2.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+			this.label2.Location = new System.Drawing.Point(44, 60);
 			this.label2.Name = "label2";
 			this.label2.Size = new System.Drawing.Size(100, 23);
 			this.label2.TabIndex = 6;
@@ -95,15 +100,17 @@ namespace practica_cero_dos
 			// 
 			// txtNum1
 			// 
-			this.txtNum1.Location = new System.Drawing.Point(118, 23);
+			this.txtNum1.Location = new System.Drawing.Point(150, 36);
 			this.txtNum1.Name = "txtNum1";
 			this.txtNum1.Size = new System.Drawing.Size(100, 20);
 			this.txtNum1.TabIndex = 5;
 			// 
 			// label1
 			// 
+			this.label1.BackColor = System.Drawing.Color.Transparent;
 			this.label1.Font = new System.Drawing.Font("Perpetua Titling MT", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.label1.Location = new System.Drawing.Point(12, 24);
+			this.label1.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+			this.label1.Location = new System.Drawing.Point(44, 37);
 			this.label1.Name = "label1";
 			this.label1.Size = new System.Drawing.Size(100, 23);
 			this.label1.TabIndex = 4;
@@ -111,63 +118,80 @@ namespace practica_cero_dos
 			// 
 			// btnborrar
 			// 
+			this.btnborrar.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnborrar.BackgroundImage")));
+			this.btnborrar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
 			this.btnborrar.Font = new System.Drawing.Font("Perpetua Titling MT", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.btnborrar.Location = new System.Drawing.Point(68, 207);
+			this.btnborrar.Location = new System.Drawing.Point(74, 338);
 			this.btnborrar.Name = "btnborrar";
 			this.btnborrar.Size = new System.Drawing.Size(56, 42);
 			this.btnborrar.TabIndex = 9;
-			this.btnborrar.Text = "X";
 			this.btnborrar.UseVisualStyleBackColor = true;
 			this.btnborrar.Click += new System.EventHandler(this.BtnborrarClick);
 			// 
 			// btncalcular
 			// 
+			this.btncalcular.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btncalcular.BackgroundImage")));
+			this.btncalcular.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
 			this.btncalcular.Font = new System.Drawing.Font("Perpetua Titling MT", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.btncalcular.Location = new System.Drawing.Point(5, 207);
+			this.btncalcular.Location = new System.Drawing.Point(12, 338);
 			this.btncalcular.Name = "btncalcular";
 			this.btncalcular.Size = new System.Drawing.Size(56, 42);
 			this.btncalcular.TabIndex = 8;
-			this.btncalcular.Text = "-";
 			this.btncalcular.UseVisualStyleBackColor = true;
 			this.btncalcular.Click += new System.EventHandler(this.BtncalcularClick);
 			// 
 			// lblX1
 			// 
+			this.lblX1.BackColor = System.Drawing.Color.Transparent;
 			this.lblX1.Font = new System.Drawing.Font("Perpetua Titling MT", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.lblX1.Location = new System.Drawing.Point(12, 142);
+			this.lblX1.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+			this.lblX1.Location = new System.Drawing.Point(44, 155);
 			this.lblX1.Name = "lblX1";
 			this.lblX1.Size = new System.Drawing.Size(206, 23);
 			this.lblX1.TabIndex = 10;
 			// 
 			// lblX2
 			// 
+			this.lblX2.BackColor = System.Drawing.Color.Transparent;
 			this.lblX2.Font = new System.Drawing.Font("Perpetua Titling MT", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.lblX2.Location = new System.Drawing.Point(12, 119);
+			this.lblX2.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+			this.lblX2.Location = new System.Drawing.Point(44, 132);
 			this.lblX2.Name = "lblX2";
 			this.lblX2.Size = new System.Drawing.Size(206, 23);
 			this.lblX2.TabIndex = 11;
 			// 
 			// txtNum3
 			// 
-			this.txtNum3.Location = new System.Drawing.Point(118, 73);
+			this.txtNum3.Location = new System.Drawing.Point(150, 86);
 			this.txtNum3.Name = "txtNum3";
 			this.txtNum3.Size = new System.Drawing.Size(100, 20);
 			this.txtNum3.TabIndex = 13;
 			// 
 			// label3
 			// 
+			this.label3.BackColor = System.Drawing.Color.Transparent;
 			this.label3.Font = new System.Drawing.Font("Perpetua Titling MT", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.label3.Location = new System.Drawing.Point(12, 74);
+			this.label3.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+			this.label3.Location = new System.Drawing.Point(44, 87);
 			this.label3.Name = "label3";
 			this.label3.Size = new System.Drawing.Size(100, 23);
 			this.label3.TabIndex = 12;
 			this.label3.Text = "Numero 3:";
 			// 
+			// izunaToolStripMenuItem
+			// 
+			this.izunaToolStripMenuItem.Name = "izunaToolStripMenuItem";
+			this.izunaToolStripMenuItem.Size = new System.Drawing.Size(47, 20);
+			this.izunaToolStripMenuItem.Text = "Izuna";
+			this.izunaToolStripMenuItem.Click += new System.EventHandler(this.IzunaToolStripMenuItemClick);
+			// 
 			// Form1
 			// 
 			this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-			this.ClientSize = new System.Drawing.Size(231, 261);
+			this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
+			this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+			this.ClientSize = new System.Drawing.Size(301, 392);
 			this.Controls.Add(this.txtNum3);
 			this.Controls.Add(this.label3);
 			this.Controls.Add(this.lblX2);
@@ -187,6 +211,7 @@ namespace practica_cero_dos
 			this.ResumeLayout(false);
 			this.PerformLayout();
 		}
+		private System.Windows.Forms.ToolStripMenuItem izunaToolStripMenuItem;
 		private System.Windows.Forms.Label label3;
 		private System.Windows.Forms.TextBox txtNum3;
 		private System.Windows.Forms.Label lblX2;
